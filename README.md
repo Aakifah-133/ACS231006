@@ -65,20 +65,20 @@ public:
 };
 
 int main() {
-    Course math("Mathematics");
+    Course oop("oop");
 
-    math.addStudent(new Student("Alice", 1));
-    math.addStudent(new Student("Bob", 2));
-    math.addStudent(new Student("Charlie", 3));
+    oop.addStudent(new Student("Ali", 1));
+    oop.addStudent(new Student("amna", 2));
+    oop.addStudent(new Student("aakifah", 3));
 
     
-    Course physics = math;
+    Course physics = oop;
 
     physics.dropStudent(2);
 
     
-    cout << "Math Course Students:" << endl;
-    math.printStudents();
+    cout << "oop Course Students:" << endl;
+    oop.printStudents();
 
     cout << "\nPhysics Course Students:" << endl;
     physics.printStudents();
